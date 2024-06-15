@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hide Button on Click (Product Version)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-200 flex items-center justify-center h-screen">
+  <div class="mx-auto p-8 bg-white rounded shadow-lg">
+    <div class="flex items-center justify-center">
+      <div class="bg-indigo-700 py-2 px-4 text-white rounded cursor-pointer hover:bg-indigo-600">
+        <button type="button" id="startFreeProductButton">Start Free</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript function to hide the button
+    document.getElementById('startFreeProductButton').addEventListener('click', function() {
+      // Hide the button container
+      document.querySelector('.bg-indigo-700').style.display = 'none';
+    });
+  </script>
+</body>
+</html>
